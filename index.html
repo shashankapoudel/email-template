@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Info</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <style>
+        body {
+            /* font-family: Arial, sans-serif; */
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .email-container {
+            max-width: 600px;
+            width: 100%;
+            margin: 5px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 24px 55px;
+            box-sizing: border-box;
+            gap: 24px;
+            max-height: 1027px;
+        }
+
+        .email-container h1 {
+            font-size: medium;
+            color:#191B22;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .email-container p {
+            color: #384860;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .property-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+        }
+
+        .property-details {
+            margin: 10px 0;
+            color: #333;
+            padding: 10px;
+        }
+
+        .property-details p {
+            margin: 5px 0;
+            color: #384860;
+            font-weight: 400;
+        }
+
+        .location {
+            font-weight: 600;
+            color:#384860;
+        }
+
+        .cost {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review-btn {
+            display: inline-block;
+            padding: 8px 24px;
+            background-color: #006AFF;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            gap: 4px;
+        }
+
+        .share-section {
+            text-align: center;
+            background-color: #F1F5F9;
+            padding: 24px 12px;
+            margin-top: 20px;
+            border-radius: 5px;
+            gap: 18px;
+        }
+
+        .share-section p {
+            font-size: small;
+            color:#384860;
+        }
+        .share-section h2{
+            color:#121A26;
+            font-weight: 700;
+        }
+
+        .share-btn {
+            display: inline-block;
+            padding: 8px 24px;
+            background-color: #f1f1f1;
+            color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #006AFF;
+            cursor: pointer;
+            margin-top: 10px;
+            box-sizing: border-box;
+            font-size: smaller;
+        }
+
+        .footer {
+            text-align: left;
+            font-size: 12px;
+            color:#FFFFFF;
+            margin-top: 25px;
+            gap: 10px;
+            padding: 12px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: #191B22;
+            font-size: 12px;
+        }
+
+        .property-details .location,
+        .property-details .cost {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .fas fa-dollar-sign icon {
+            margin: 0 2px;
+        }
+
+        .footer-link {
+            color: #191B22;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .footer-first {
+            margin-bottom: 10px;
+        }
+        .location-property{
+            color: #384860;
+              font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .email-container {
+                padding: 24px;
+            }
+
+            .email-container h1 {
+                font-size: 16px;
+            }
+
+            .email-container p {
+                font-size: 12px;
+            }
+
+            .review-btn,
+            .share-btn {
+                display: block;
+                width: 100%;
+                padding: 8px;
+            }
+
+            .footer p {
+                font-size: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container">
+        <h1>Hello there,</h1>
+        <p>I'm <span class="location">[Sender_name]</span>. Here is the property info for <span
+                class="location">[Property_name]</span> I have just
+            shared. Have a
+            look. You can
+            share it with other buyers or your team.</p>
+        <img src="https://development-63.s3.us-west-2.amazonaws.com/test.png" alt="Property Image"
+            class="property-image" width="400px" height="180px">
+
+        <div class="property-details">
+            <p><i class="fas fa-map-marker-alt icon"></i> Location: <span class="location-property">[Location]</span></p>
+            <p><i class="fas fa-dollar-sign icon"></i> Cost: <span class="location-property">$3,898,000 </span> 1 bedroom | 1
+                bathroom
+                | 1655 sqft</p>
+        </div>
+        <a href="#" class="review-btn">Review Now</a>
+
+        <div class="share-section">
+            <h2>Share this property</h2>
+            <p class="share-text">To share this property, copy the link by clicking the button</p>
+            <a href="#" class="share-btn">Copy Link from here</a>
+        </div>
+
+        <div class="footer">
+            <div class="footer-first">
+                <p> <a href="#" class="footer-link">Sign Up</a> | <a href="#" class="footer-link">Log In</a> | <a
+                        href="#" class="footer-link">Contact Us</a></p>
+            </div>
+            <p>100 California St, Set 800, San Francisco</p>
+            <p>© 2022 Real Insight</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
